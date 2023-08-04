@@ -16,6 +16,7 @@ public static void main(String []args)
           tempSum=0;
         }
     }
+   System.out.println("This program is to print maximum sum of subarray");
    System.out.println("MaximumSubArraySum : " +sum);
 }
 }
