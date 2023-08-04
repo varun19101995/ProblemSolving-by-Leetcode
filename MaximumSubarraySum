@@ -1,0 +1,23 @@
+import java.lang;
+public class MaximumSubarraySum{
+public static void main(String []args)
+{
+   int a[]={8,7,10,-2,5,11};
+   int sum=Integer.MIN_VALUE;
+   int tempSum=0;
+   for(int i=0;i<a.length;i++)
+    {   tempSum=tempSum+a[i];
+        if(tempSum>0)
+        {
+          sum=tempSum;
+        }
+        if(tempSum<0)
+        {
+          tempSum=0;
+        }
+    }
+   System.out.println("MaximumSubArraySum : " +sum);
+}
+}
+
+    
